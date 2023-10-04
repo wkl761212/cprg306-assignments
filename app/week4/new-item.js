@@ -28,7 +28,7 @@ export default function NameForm() {
                         <div className="relative mb-6">
                             <label className="block text-black mb-2">
                             
-                            <input type="text" placeholder="Item name" value={name} onChange={handleChange} className="border-2 border-grey-200 rounded-lg pl-2 "/>
+                            <input type="text" placeholder="Item name" required value={name} onChange={handleChange} className="border-2 border-grey-200 rounded-lg pl-2 "/>
                             </label>
                         </div>
                         <div className="flex justify-between mb-4">
