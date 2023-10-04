@@ -1,65 +1,6 @@
 "use client";
  
 import { useState } from "react";
- 
-/*
-    Initialize State Variables
-Name Field
-
-Use the useState hook to create a state variable called name and a setter function called setName.
-The initial value of name should be an empty string (""), indicating that the name field is initially blank.
-Quantity Field
-
-Use the useState hook to create a state variable called quantity and a setter function called setQuantity.
-The initial value of quantity should be 1, indicating that the quantity field is initially set to 1.
-Category Field
-
-Use the useState hook to create a state variable called category and a setter function called setCategory.
-The initial value of category should be "produce", indicating that the category field is initially set to "Produce".
-Create a Form Submission Handler
-Create a handleSubmit function. This function should:
-
-Prevent the form's default submission behavior.
-Create an item object with the current values of name, quantity, and category.
-Log the item object to the console.
-Display an alert with the current state of name, quantity, and category.
-Reset the state variables to their initial values.
-Render the Component
-In the return statement of your function, create a form that includes:
-
-Name Field
-
-Create an input field of type text.
-The value of the input field should be tied to the name state variable, meaning that it displays the current value of name.
-Use the setName function in an onChange event handler to update the state of name as the user types into the field.
-Add required attribute to the input field to ensure that the user cannot submit the form without providing a name.
-Quantity Field
-
-Create an input field of type number.
-Set the min attribute to "1" and the max attribute to "99" to limit the range of valid quantities.
-The value of the input field should be tied to the quantity state variable.
-Use the setQuantity function in an onChange event handler to update the state of quantity as the user types into the field. Make sure to convert the input to a Number before setting the state.
-Add required attribute to the input field to ensure that the user cannot submit the form without providing a quantity.
-Category Field
-
-Create a select element for the category.
-The value of the select element should be tied to the category state variable.
-Use the setCategory function in an onChange event handler to update the state of category as the user selects a different option.
-Create various option elements within the select for each possible category ("Produce", "Dairy", "Bakery", "Meat", "Frozen Foods", "Canned Goods", "Dry Goods", "Beverages", "Snacks", "Household", "Other"). Each option should have a value that matches the category it represents.
-Submit Button
-
-Create a submit button that triggers the handleSubmit function when clicked.
-
-
-*/
-
-
-
-
-
-
-
-
 
 export default function NameForm() {
     const [name, setName] = useState("");
