@@ -37,7 +37,7 @@ async function fetchMealIdeas(ingredient) {
             <h2 className="m-4 text-m ">Here are some meal ideas using {ingredient}: </h2>
             <ul>
                 {meals.map((meal) => (
-                    <li className="border border-sky-500 hover:bg-sky-500 bg-yellow-100 w-full max-w-xs m-2 p-2 rounded cursor-pointer" 
+                    <li className="border border-sky-500 hover:bg-sky-500 bg-yellow-100 w-full max-w-xs m-1.5 p-2 rounded cursor-pointer" 
                     key={meal.idMeal} >
                         {meal.strMeal}
                     </li>
