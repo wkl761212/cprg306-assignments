@@ -32,16 +32,21 @@ async function fetchMealIdeas(ingredient) {
       }
       else {
           return (
-              <div className="border border-sky-500 hover:bg-sky-500 bg-yellow-100 w-full max-w-xs m-4 p-2 rounded cursor-pointer">
-                  <h1 class="text-2xl font-bold">Meal Ideas for {ingredient}</h1>
-                  <ul>
-                      {meals.map((meal) => (
-                          <li key={meal.idMeal}>{meal.strMeal}</li>
-                      ))}
-                  </ul>
-              </div>
+            <div>
+            <h1 className="m-4 text-3xl font-bold">Meal Ideas</h1>
+            <h2 className="m-4 text-m ">Here are some meal ideas using {ingredient}: </h2>
+            <ul>
+                {meals.map((meal) => (
+                    <li className="border border-sky-500 hover:bg-sky-500 bg-yellow-100 w-full max-w-xs m-2 p-2 rounded cursor-pointer" 
+                    key={meal.idMeal} >
+                        {meal.strMeal}
+                    </li>
+                ))}
+            </ul>
+        </div>
           )
       }
+    
   }
 
     return (

@@ -28,7 +28,7 @@ export default function Page() {
             </p>
         
             <div className='flex' >
-                <div className='flex-1'>
+                <div className='flex-2'>
                     <NewItem onAddItem={(onAddItem => handleAddItem(onAddItem))} />
                     <ItemList items={items} onItemSelect={selectedItemName => handleItemSelect(selectedItemName)} /> {/* Renamed onItemClick to onItemSelect for consistency */}
                 </div>
